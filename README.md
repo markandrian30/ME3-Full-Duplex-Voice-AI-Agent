@@ -9,6 +9,20 @@
 
 *AI 231 Machine Exercise. Sections follow the course template.*
 
+## What it's built with
+
+| Part | Used |
+|---|---|
+| **Device** | Raspberry Pi 5 |
+| **Harness** | Pipecat 1.12 (Python) with an MCP client |
+| **ASR (speech-to-text)** | Deepgram Flux, streaming, through Kibo's own `asr` MCP server |
+| **TTS (text-to-speech)** | ElevenLabs Flash v2.5, streaming, through Kibo's own `tts` MCP server |
+| **LLM** | Qwen3.8-27B, served with vLLM on the university DGX (2 servers) |
+| **VAD** | Silero VAD, on the Pi (16 kHz mono) |
+| **Echo cancellation** | PipeWire WebRTC echo canceller, on the Pi |
+| **Tools** | MCP servers written for Kibo, all running on the Pi |
+| **Audio** | USB microphone + USB speaker |
+
 ---
 
 ## 1. System diagram
