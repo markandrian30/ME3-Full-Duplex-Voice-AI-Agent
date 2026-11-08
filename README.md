@@ -1,6 +1,6 @@
-# Kibo: full-duplex voice agent on a Raspberry Pi 5
+# ME 3 - Full-Duplex Voice AI Agent
 
-Talk to Kibo like a person in the room: no wake word, no push-to-talk. Kibo:
+**Kibo**, a voice agent on a Raspberry Pi 5. Talk to Kibo like a person in the room: no wake word, no push-to-talk. Kibo:
 
 - **answers out loud**, in short sentences
 - **shows long answers on screen**
