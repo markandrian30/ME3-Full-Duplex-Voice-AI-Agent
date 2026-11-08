@@ -1,4 +1,4 @@
-# ME 3 - Full-Duplex Voice AI Agent
+# ME3 - Full-Duplex Voice AI Agent
 
 **Kibo**, a voice agent on a Raspberry Pi 5. Talk to Kibo like a person in the room: no wake word, no push-to-talk. Kibo:
 
