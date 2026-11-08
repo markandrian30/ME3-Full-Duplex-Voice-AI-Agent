@@ -144,37 +144,26 @@ with one person in the same room. Warm, upbeat, natural.
 
 ---
 
-## Demo
+## Demo and results
 
-| # | You say | Kibo |
-|---|---|---|
-| 1 | "Make a Christmas snake game app." | "Okay, building that right now." (builds in the background) |
-| 2 | "While you're doing that, train an MNIST classifier on the DGX." | "On it, writing the code now." (runs on the DGX) |
-| 3 | "What are you building?" | "The code for the DGX run and the snake app." |
-| 4 | "What movies are showing in TriNoma?" | "7 films at TriNoma today, next at 12:00 PM." |
-| 5 | "What's the cheapest flight to Cebu tomorrow?" | "Cebu Pacific 5J2515, 2:45 AM, 5,159 pesos." |
-| 6 | "Make a website about Mark Andrian Macalalad and publish it on github.io." | Live at [markandrian30.github.io/mark-andrian-macalalad](https://markandrian30.github.io/mark-andrian-macalalad/) |
+One 2–3 minute session (live, 7 Nov 2026). Natural turns, no push-to-talk; the app and the DGX job keep running while the other questions are asked.
+
+| # | You say | Kibo | Time |
+|---|---|---|---|
+| 1 | "Make a Christmas snake game app." | "Okay, building that right now." (builds in the background) | answers at once |
+| 2 | "While you're doing that, train an MNIST classifier on the DGX." | "On it, writing the code now." Code written in 12 s, ran OK on the DGX, results page shown | ~1.5 min |
+| 3 | "What are you building?" | "The code for the DGX run and the snake app." | instant |
+| 4 | "What movies are showing in TriNoma?" | "7 films at TriNoma today, next at 12:00 PM." (list on screen) | ~2.5 s |
+| 5 | "What's the cheapest flight to Cebu tomorrow?" | "Cebu Pacific 5J2515, nonstop at 2:45 AM for 5,159 pesos." (flights on screen) | ~2 s |
+| 6 | "Show me empagliflozin's properties." | PubChem properties page, "There you go." | ~7 s |
+| 7 | "Can it inhibit SGLT2?" | "Honest answer: no direct evidence. PubChem has no recorded SGLT2 assay…" | ~12 s |
+| 8 | "Make a website about Mark Andrian Macalalad and publish it on github.io." | Live at [markandrian30.github.io/mark-andrian-macalalad](https://markandrian30.github.io/mark-andrian-macalalad/) | ~1 min |
 
 **When something is slow:**
 - **DGX run:** a spoken update every 30 s ("Still running on the DGX.")
 - **Web search over 12 s:** Kibo answers from what it already knows, and says so
 
----
-
-## Results: sample questions
-
-Live sessions, 7 Nov 2026:
-
-| You asked | Kibo answered | Time |
-|---|---|---|
-| Cheapest flight to Cebu tomorrow | "Cebu Pacific 5J2515, nonstop at 2:45 AM for 5,159 pesos." | ~2 s |
-| Movies at TriNoma today | "7 films at TriNoma Cinema today, next at 12:00 PM." | ~2.5 s |
-| Train MNIST on the DGX, 10 sample predictions | Code written in 12 s, ran OK, results page shown | ~1.5 min |
-| Can that compound inhibit SGLT2? | "Honest answer: no direct evidence. PubChem has no recorded SGLT2 assay…" | ~12 s |
-| Show me empagliflozin's properties | PubChem properties page, "There you go." | ~7 s |
-| Website about Mark Andrian Macalalad on github.io | Built and published | ~1 min |
-
-**Setup:** Raspberry Pi 5 · USB mic + speaker · Pipecat 1.12 · Qwen3.8-27B · Deepgram Flux · ElevenLabs · Silero VAD · 65 automated tests before every change
+**Setup:** Raspberry Pi 5 · USB mic + speaker · 65 automated tests before every change
 
 ---
 
